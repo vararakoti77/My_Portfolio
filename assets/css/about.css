@@ -1,0 +1,117 @@
+   .aboutme{
+    background: linear-gradient(120deg, #1c1c2b, #0f2027);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+  .aboutme h1 {
+      margin: 40px 0 10px;
+      text-align: center;
+      color: #00fff7;
+      text-shadow: 0 0 15px #00fff7;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #ccc;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px 20px;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .scene {
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .cube {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotate 10s infinite linear;
+    }
+
+    .paused {
+      animation-play-state: paused !important;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotateX(0deg) rotateY(0deg); }
+      100% { transform: rotateX(360deg) rotateY(360deg); }
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      cursor: pointer;
+      backdrop-filter: blur(6px);
+      text-shadow: 0 0 10px #000;
+      color: white;
+    }
+
+    .front  { transform: rotateY(0deg) translateZ(100px); background: rgba(0, 255, 213, 0.2); border: 2px solid #0ff; }
+    .back   { transform: rotateY(180deg) translateZ(100px); background: rgba(255, 0, 170, 0.2); border: 2px solid #f0f; }
+    .right  { transform: rotateY(90deg) translateZ(100px); background: rgba(0, 100, 255, 0.2); border: 2px solid #00f; }
+    .left   { transform: rotateY(-90deg) translateZ(100px); background: rgba(255, 255, 0, 0.2); border: 2px solid #ff0; }
+
+    .content-panel {
+      flex: 1;
+      max-width: 550px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid #00fff7;
+      padding: 20px;
+      display: none;
+      animation: fadeIn 0.5s ease forwards;
+      border-radius: 10px;
+      color: #fff;
+      text-shadow: 0 0 3px #000;
+      position: relative;
+    }
+
+    .content-panel.active {
+      display: block;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: 1px solid #00fff7;
+      color: #00fff7;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .about-image {
+      width: 120px;
+      border-radius: 50%;
+      float: right;
+      margin-left: 15px;
+      border: 3px solid #00fff7;
+      box-shadow: 0 0 10px #00fff7;
+    }

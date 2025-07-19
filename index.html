@@ -9,6 +9,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
+   <link rel="stylesheet" href="assets/css/about.css">
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -96,79 +97,69 @@
       </div>
 
     </section><!-- /Hero Section -->
+  
 
-    <!-- About Section -->
-     <section id="about" class="about section">
-  <div class="container" data-aos="fade-up">
 
-    <div class="section-title text-center">
-      <h2>About Me</h2>
+
+<!--About section-->
+<div class="aboutme"  id="about">
+      <h1>About Me</h1>
+  <p class="intro">I'm Varaprasad Rakoti — an AI & ML Engineer passionate about intelligent systems and futuristic web interfaces. Tap on the cube faces to learn about my journey.</p>
+
+  <div class="main-container">
+    <div class="scene">
+      <div class="cube" id="cube">
+        <div class="face front" data-panel="about">About Me</div>
+        <div class="face back" data-panel="projects">Projects</div>
+        <div class="face right" data-panel="education">Education</div>
+        <div class="face left" data-panel="experience">Experience</div>
+      </div>
     </div>
 
-    <div class="row gy-4">
-
-      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-        <div class="about-card">
-          <div class="icon"><i class="bi bi-mortarboard-fill"></i></div>
-          <h4>Education</h4>
-          <ul>
-            <li><strong>SSC:</strong> Kerala English Medium School – 98%</li>
-            <li><strong>Intermediate:</strong> Rabindrabharathi Junior College – 77%</li>
-            <li><strong>B.Tech (AI & ML):</strong> Sri Sivani Engineering College – 70%</li>
-          </ul>
-        </div>
-      </div>
-
-      
-      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
-        <div class="about-card">
-          <div class="icon"><i class="bi bi-kanban-fill"></i></div>
-          <h4>Projects</h4>
-          <ul>
-            <li><strong>Text-to-Video Generator:</strong> Converts college data into narrated videos.</li>
-            <li><strong>User Profiling System:</strong> Segments users for targeted strategies.</li>
-            <li><strong>Personal Portfolio:</strong> Fully responsive, animated, and voice-enabled.</li>
-            <li><strong>Job Scraper:</strong> Automated tool to gather opportunities from the web.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
-        <div class="about-card">
-          <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
-          <h4>Internship Experience</h4>
-          <p>
-            Currently doing an internship in Artificial Intelligence and Machine Learning where I am learning advanced ML concepts, data processing, and deploying intelligent systems.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-        <div class="about-card">
-          <div class="icon"><i class="bi bi-person-hearts"></i></div>
-          <h4>Interests</h4>
-          <p>
-            I love building side projects, exploring new frameworks, creating automation tools, and keeping up with emerging tech like Generative AI, Web3, and Open Source contributions.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-        <div class="about-card">
-          <div class="icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
-          <h4>Vision</h4>
-          <p>
-            To create intelligent solutions that improve lives, bridge gaps between technology and society, and inspire others to innovate with empathy and impact.
-          </p>
-        </div>
-      </div>
-
+    <div id="about" class="content-panel">
+      <button class="close-btn">&times;</button>
+      <h2 style="color: white;">About Me</h2>
+      <img src="IMG_20250308_174257.jpg" class="about-image" alt="Profile Image">
+      <ul>
+        <li>I'm Varaprasad Rakoti, an aspiring AI & Machine Learning Engineer.</li>
+        <li>I build intelligent applications with futuristic UI/UX design.</li>
+        <li>Proficient in Python, full-stack development, and modern ML frameworks.</li>
+        <li>I love turning complex ideas into real-world solutions.</li>
+      </ul>
     </div>
 
+    <div id="education" class="content-panel">
+      <button class="close-btn">&times;</button>
+      <h2 style="color: white">Education</h2>
+      <ul>
+        <li>B.Tech in AI & ML – Sri Sivani Engineering College (70%)</li>
+        <li>Intermediate – Rabindrabarathi Junior College (77%)</li>
+        <li>SSC – Kerala English Medium School (98%)</li>
+      </ul>
+    </div>
+
+    <div id="experience" class="content-panel">
+      <button class="close-btn">&times;</button>
+      <h2 style="color: white">Experience</h2>
+      <p>Interned as an AI/ML developer, worked on predictive algorithms, full-stack web projects, and participated in tech fests and hackathons.</p>
+    </div>
+
+    <div id="projects" class="content-panel">
+      <button class="close-btn">&times;</button>
+      <h2 style="color: white">Projects</h2>
+      <p><strong>Text-to-Video Generator:</strong> Automatically scrapes college websites, summarizes content, and converts to narrated videos.</p>
+      <p><strong>User Segmentation using ML:</strong> Cluster-based profiling of 1000+ users using K-means and hierarchical models with dashboards.</p>
+      <p><strong>AI Portfolio Website:</strong> Includes animated 3D interfaces, voice control, and futuristic visual design using HTML, CSS, and JS.</p>
+    </div>
   </div>
-</section>
+  </div>
 
-    <!-- /About Section -->
+
+
+
+
+
+    
 <!-- Certificates Section -->
 <section id="certificates" class="cert-wall-section">
   <h2 class="cert-wall-title">Hackathon Certificates</h2>
@@ -223,65 +214,57 @@
 </div>
 
     
-    <!-- Skills Section -->
-     <section id="skills" style="
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #0a0f2c, #1a225a);
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-">
-  <h2 style="
-    font-size: 2.8rem;
-    margin-bottom: 40px;
-    font-family: 'Orbitron', sans-serif;
-    color: #00d9ff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  ">
-      My Skills (Hover to Hear)
-  </h2>
+    <section id="skills">
+  <h1 style="color:azure;">My Skills</h1>
 
-  <div class="skills-grid" style="
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 30px;
-    max-width: 900px;
-    margin: auto;
-  ">
-    
-    <div class="skill-card" data-desc="HTML is the foundation of web pages. I use it to create structured, semantic layouts." style="transition: all 0.4s ease; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; cursor: pointer; text-align: center;">
-      <div class="skill-icon" style="font-size: 2.5rem; color: #f97316;"><i class="fab fa-html5"></i></div>
-      <div class="skill-name" style="margin-top: 10px;">HTML</div>
+  <div class="skills-container">
+    <div class="skill" data-desc="Python is a versatile high-level programming language known for its readability and broad applications in web development, data science, AI, and more.">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
+      <span>Python</span>
+      <div class="description"></div>
     </div>
 
-    <div class="skill-card" data-desc="CSS helps me design beautiful, responsive, and animated user interfaces." style="transition: all 0.4s ease; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; cursor: pointer; text-align: center;">
-      <div class="skill-icon" style="font-size: 2.5rem; color: #0ea5e9;"><i class="fab fa-css3-alt"></i></div>
-      <div class="skill-name" style="margin-top: 10px;">CSS</div>
+    <div class="skill" data-desc="Java is a popular object-oriented programming language used for building platform-independent applications, especially Android apps and enterprise software.">
+      <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" />
+      <span>Java</span>
+      <div class="description"></div>
     </div>
 
-    <div class="skill-card" data-desc="JavaScript brings logic and interactivity to my web projects." style="transition: all 0.4s ease; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; cursor: pointer; text-align: center;">
-      <div class="skill-icon" style="font-size: 2.5rem; color: #facc15;"><i class="fab fa-js-square"></i></div>
-      <div class="skill-name" style="margin-top: 10px;">JavaScript</div>
+    <div class="skill" data-desc="HTML is the standard markup language used to create and design webpages and web applications.">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" />
+      <span>HTML</span>
+      <div class="description"></div>
     </div>
 
-    <div class="skill-card" data-desc="React helps me build modern, scalable, and fast frontend applications." style="transition: all 0.4s ease; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; cursor: pointer; text-align: center;">
-      <div class="skill-icon" style="font-size: 2.5rem; color: #38bdf8;"><i class="fab fa-react"></i></div>
-      <div class="skill-name" style="margin-top: 10px;">React</div>
+    <div class="skill" data-desc="CSS is used for styling the visual layout and design of webpages, making them attractive and responsive.">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" />
+      <span>CSS</span>
+      <div class="description"></div>
     </div>
 
-    <div class="skill-card" data-desc="Python powers my AI, ML, and backend applications." style="transition: all 0.4s ease; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; cursor: pointer; text-align: center;">
-      <div class="skill-icon" style="font-size: 2.5rem; color: #facc15;"><i class="fab fa-python"></i></div>
-      <div class="skill-name" style="margin-top: 10px;">Python</div>
+    <div class="skill" data-desc="JavaScript enables interactive behavior on webpages, powering dynamic content and complex front-end functionality.">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
+      <span>JavaScript</span>
+      <div class="description"></div>
     </div>
 
-    <div class="skill-card" data-desc="Git enables me to version control and collaborate effectively on projects." style="transition: all 0.4s ease; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; cursor: pointer; text-align: center;">
-      <div class="skill-icon" style="font-size: 2.5rem; color: #f43f5e;"><i class="fab fa-git-alt"></i></div>
-      <div class="skill-name" style="margin-top: 10px;">Git</div>
+    <div class="skill" data-desc="DBMS stands for Database Management System, software that manages databases and allows efficient data handling.">
+      <img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" alt="DBMS" />
+      <span>DBMS</span>
+      <div class="description"></div>
     </div>
 
+    <div class="skill" data-desc="C is a powerful general-purpose programming language, widely used for system and software development and embedded programming.">
+      <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="C" />
+      <span>C</span>
+      <div class="description"></div>
+    </div>
   </div>
+
+  <!-- Optional Background Audio -->
+  <audio id="background-voice" src="audio/background-voice.mp3" loop muted preload="auto"></audio>
 </section>
+
 
     <!-- /Skills Section -->
 
@@ -499,7 +482,43 @@
     isSpeaking = !isSpeaking;
   });
 </script>
+<script src="assets/js/about.js"></script>
+<script>
+  const backgroundVoice = document.getElementById('background-voice');
 
+  // Unmute and play background audio on first click
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', () => {
+      if (backgroundVoice.paused || backgroundVoice.muted) {
+        backgroundVoice.muted = false;
+        backgroundVoice.volume = 0.2;
+        backgroundVoice.play().catch(() => {});
+      }
+    }, { once: true });
+  });
+
+  // Skill speech on hover
+  const skills = document.querySelectorAll('#skills .skill');
+  skills.forEach(skill => {
+    const descText = skill.getAttribute('data-desc');
+    const descDiv = skill.querySelector('.description');
+
+    skill.addEventListener('mouseenter', () => {
+      descDiv.textContent = descText;
+      skill.classList.add('hovered');
+      const utterance = new SpeechSynthesisUtterance(descText);
+      utterance.rate = 1;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(utterance);
+    });
+
+    skill.addEventListener('mouseleave', () => {
+      speechSynthesis.cancel();
+      skill.classList.remove('hovered');
+      descDiv.textContent = '';
+    });
+  });
+</script>
 
 </body>
 
